@@ -1,13 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MenuComponent } from './menu/menu.component';
-import { MatMenuModule, BrowserAnimationsModule, MatButtonModule, MatMenuModule } from '@angular/material/menu';
-
+import { MatMenuModule } from '@angular/material/menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button/button-module';
 
 @NgModule({
-  declarations: [
-    MenuComponent
-  ],
+  declarations: [MenuComponent],
   imports: [
     BrowserAnimationsModule,
     CommonModule,
@@ -15,4 +14,4 @@ import { MatMenuModule, BrowserAnimationsModule, MatButtonModule, MatMenuModule 
     MatMenuModule
   ]
 })
-export class LayoutModule { }
+export class LayoutModule {}
